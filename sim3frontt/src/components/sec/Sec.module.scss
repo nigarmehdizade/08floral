@@ -1,0 +1,43 @@
+
+    .pages {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        // .active {
+        //     color: #FDA403 ;
+        // }
+    }
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10011;
+    background-color: rgba(7, 223, 115, 0.87);
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+    }}

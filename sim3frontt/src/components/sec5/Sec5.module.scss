@@ -1,0 +1,26 @@
+.container{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .yazi{
+        color: green;
+        p{
+            font-size: 30px;
+            padding: 0 30px;
+        }
+        h1{
+            font-size: 50px;
+        }
+    }
+}
+.flex{
+    display: flex;
+    color: green;
+    h3{
+padding: 0 20px;
+    }
+    p{
+    padding: 0 20px;}
+}

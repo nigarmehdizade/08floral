@@ -1,0 +1,54 @@
+.right img{   
+ width: 70%;
+ height: 36 0px;
+ background-size: cover;
+}
+.right{
+    background-color: #1B755E;
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    h5 {
+        font-size: 40px;
+        color: white;
+    }
+    p{
+        font-size: 20px;
+        color: white;
+    }
+}
+.section{
+    margin-left: 400px;
+    width: 100%;
+    gap: 50px;
+    height: 750px;
+    display:flex;
+    align-items: center;
+}
+
+.container{
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    padding: 10px 20px;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 20px;
+   &:hover{
+background-color: white;
+   }
+}
+.btn button:hover {
+    background: #f41068
+  }
