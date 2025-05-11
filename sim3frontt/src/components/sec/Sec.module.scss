@@ -29,15 +29,16 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: absolute;
+    height: 80px;
+    // position: absolute;
     left: 0px;
     top: 0px;
-    z-index: 10011;
-    background-color: rgba(7, 223, 115, 0.87);
+    background-color: #10634EE6;
 
     .logo {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 20%;
+      
     }}

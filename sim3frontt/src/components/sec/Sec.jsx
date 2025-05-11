@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from  "./Sec.module.scss"
+import { Link } from 'react-router'
 const Sec = () => {
   return (
     <div className={styles.header}>
@@ -9,10 +10,8 @@ const Sec = () => {
     
         <div className={styles.pages}>
             <a href="/">Home</a>
-                <a href="/about us">About US</a>
-                <a href="/portfollo">Portfollo</a>
-                <a href="/pricing">Pricing</a>
-                <a href="/contact">Contact</a>
+                <Link to="/basket">Basket </Link>
+                <Link to="/wishlist">Wishlist </Link>
             </div>
       
     </div>

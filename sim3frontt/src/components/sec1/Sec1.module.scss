@@ -1,14 +1,12 @@
-.div{
-    height: 70vh;
-    background-size: 100%;
-    width: 100%;
+.container{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    background-repeat: no-repeat;
-    background-image: url('https://mobirise.com/extensions/floram4/floral-studio/assets/images/sl7.jpg');
-}
+background-image: url('https://mobirise.com/extensions/floram4/floral-studio/assets/images/sl7.jpg');
+background-size: cover;
+width: 100%;
+height: 100vh;
+
 .txt{
     display: flex;
     align-items: center;
@@ -18,21 +16,11 @@
     }
     p{
         font-size: 20px;
+
     }
-    button{
-            padding: 10px 20px;
-            background: transparent;
-            border: 1px solid black;
-            cursor: pointer;
-            color: black;
-            font-weight: bold;
-            transition: 0.3s;
-            font-size: 20px;
-           &:hover{
-        background-color: white;
-           }
-        }
-        .btn button:hover {
-            background: #f41068
-          }
-    }
+}
+
+
+}
+
+
