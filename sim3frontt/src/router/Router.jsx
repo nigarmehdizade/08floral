@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router';
 import Home from '../pages/home/Home';
-import Admin from '../pages/admin/Admin';
 import NotFound from '../pages/NotFound';
 import Basket from '../pages/basket/Basket';
 import Wishlist from '../pages/wishlist/Wishlist';
+import Admin from '../pages/admin/Admin';
 
 
 const Router = () => {

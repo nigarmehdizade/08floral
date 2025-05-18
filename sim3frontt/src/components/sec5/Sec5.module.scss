@@ -25,3 +25,16 @@ padding: 0 20px;
     p{
     padding: 0 20px;}
 }
+@media screen and  (min-width:300px) and (max-width:576px) {
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 240vh;
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+}

@@ -1,30 +1,30 @@
-import React, { useEffect, useState } from "react";
+import React, {useEffect} from 'react'
+import styles from './Basket.module.scss'
+import {useDispatch, useSelector} from "react-redux";
+import {Link} from "react-router";
+import BCard from './components/BCard.jsx';
+import { getBasketThunk } from '../../redux/reducer/basketSlice.js';
 
 const Basket = () => {
-  const [basket, setBasket] = useState([]);
 
-  useEffect(() => {
-    const stored = localStorage.getItem("basket");
-    if (stored) {
-      setBasket(JSON.parse(stored));
-    }
-  }, []);
+    const dispatch = useDispatch()
 
-  return (
-    <div>
-      <h1>Səbət</h1>
-      {basket.length === 0 ? (
-        <p>Boşdur</p>
-      ) : (
-        basket.map(item => (
-          <div key={item._id}>
-            <img src={item.image} alt={item.name} width={100} />
-            <p>{item.name} - {item.price} AZN</p>
-          </div>
-        ))
-      )}
-    </div>
-  );
-};
+    const basket = useSelector(state => state.basket.basket)
 
-export default Basket;
+    useEffect(() => {
+        dispatch(getBasketThunk())
+    })
+
+    return (
+        <div className={styles.container}>
+            <header>
+                <Link to="/">Home</Link>
+                <Link to="/wishlist">Wishlist</Link>
+            </header>
+            <div className={styles.cards}>
+                {basket?.map(item => <BCard item={item} />)}
+            </div>
+        </div>
+    )
+}
+export default Basket

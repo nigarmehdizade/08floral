@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const productSchema=mongoose.Schema(
+const basketSchema=mongoose.Schema(
 {
 image:{type:String,required:true},
 name:{type:String , required:true},
@@ -8,6 +8,6 @@ price:{type:String,required : true}
 },  { timestamps: true });
 
 
-const productModel=mongoose.model('flora',productSchema)
+const basketModel=mongoose.model('florabasket',basketSchema)
 
-export default productModel;
+export default basketModel;
