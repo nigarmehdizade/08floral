@@ -2,11 +2,13 @@ import React from 'react'
 import styles from './Sec1.module.scss'
 const Sec1 = () => {
   return (
-   <div className={styles.container}>
-        <div className={styles.txt}>
-        <p>Fixed-Height Slider</p>
-        <h1>Excellent bouquets for you</h1>
-    </div>
+    <div className={styles.enesas}>
+      <div className={styles.yazibox} >
+        <p>Flora</p>
+      <h2>Excellent bouquets for you</h2>
+      </div>
+      
+        
     </div>)
 }
 

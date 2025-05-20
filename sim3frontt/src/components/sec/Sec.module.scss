@@ -41,4 +41,25 @@
       
     }}
 
+    @media (min-width: 300px) and (max-width: 576px) {
+  .header {
+    flex-direction: column; /* Logonu və menyunu alt-alta düz */
+    height: auto; /* Dinamik hündürlük */
+    padding: 10px 0;
     
+    .logo {
+      width: 100%; /* Tam eni tut */
+      margin-bottom: 10px; /* Logo ilə menyu arasında məsafə */
+    }
+  }
+
+  .pages {
+    flex-direction: column; /* Linkləri alt-alta düz */
+    width: 100%; /* Tam eni tut */
+    
+    a {
+      padding: 10px 0; 
+      font-size: 12px; 
+    }
+  }
+}

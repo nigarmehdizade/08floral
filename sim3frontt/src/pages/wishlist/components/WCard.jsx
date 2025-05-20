@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './WCard.module.scss'
 import {useDispatch} from "react-redux";
-import { deleteWishlistThunk } from "../../../redux/wishlistSlice.js";
+import { deleteWishlistThunk } from '../../../redux/reducer/wishlistSlice';
 
 const WCard = ({item}) => {
 

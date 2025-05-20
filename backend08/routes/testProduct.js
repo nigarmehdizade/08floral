@@ -8,16 +8,16 @@ const router=express.Router()
 router
 .get('/pro',getProducts)
 .post('/pro',postProducts)
-.delete('/pro',deleteProducts)
+.delete('/pro/:id',deleteProducts)
 
 
-.get('/basket',getBasket)
-.post('/basket',postBasket)
-.delete('/basket',deleteBasket)
+.get('/basket', getBasket)
+    .post('/basket', postBasket)
+    .delete('/basket/:id', deleteBasket)
 
-.get('/wishlist',getWishlist)
-.post('/wishlist',postWishlist)
-.delete('/wishlist',deleteWishlist)
+    .get('/wishlist', getWishlist)
+    .post('/wishlist', postWishlist)
+    .delete('/wishlist/:id', deleteWishlist)
 
 
 export default router

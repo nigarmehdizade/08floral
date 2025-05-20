@@ -3,6 +3,8 @@ import {useDispatch, useSelector} from "react-redux";
 import styles from './Wishlist.module.scss'
 import {Link} from "react-router";
 import { getWishlistThunk } from '../../redux/reducer/wishlistSlice';
+import WCard from './components/WCard';
+
 const Wishlist = () => {
 
     const dispatch = useDispatch()
